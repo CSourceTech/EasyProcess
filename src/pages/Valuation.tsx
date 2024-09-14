@@ -47,76 +47,76 @@ const Valuation = () => {
       <Navbar />
       {/* <Hero /> */}
       <Hero items={valuationItems} />
-      
-    <div style={{ display: 'flex', alignItems: 'flex-start' }}>
-    <div style={{ flex: 2, marginLeft: '80px' }}>
-      <img 
-        src="/valuationWhyUs.png" 
-        alt="Why Choose Us" 
-        style={{ width: '100%', height: 'auto' }}
-      />
-    </div>
 
-    <div style={{ flex: 2, marginLeft: '20px' }}>
-      <h1 style={{ fontSize: '70px', marginBottom: '10px', color: '#a60424' , fontWeight:'bold' }}>Why Opt For Us?</h1>
-      <h2 style={{ fontSize: '18px', marginBottom: '20px' }}>
-      Our company using tried-and-true techniques
-      </h2>
-      <div style={{ display: 'flex', flexDirection: 'column', gap: '40px' }}>
-        <div 
-          style={{ 
-            width: '550px', 
-            border: '1px solid #ddd', 
-            borderRadius: '10px', 
-            padding: '20px', 
-            boxShadow: '0 4px 8px rgba(0,0,0,0.2)', 
-            transition: 'box-shadow 0.3s ease, transform 0.3s ease',
-            cursor: 'pointer'
-          }}
-          onMouseOver={(e) => {
-            e.currentTarget.style.boxShadow = '0 6px 12px rgba(0,0,0,0.3)';
-            e.currentTarget.style.transform = 'scale(1.05)';
-          }}
-          onMouseOut={(e) => {
-            e.currentTarget.style.boxShadow = '0 4px 8px rgba(0,0,0,0.2)';
-            e.currentTarget.style.transform = 'scale(1)';
-          }}
-        >
-          <h3 style={{ fontSize: '16px', marginBottom: '5px' }}>Data-Driven Insights:</h3>
-          <p style={{ fontSize: '14px' }}>Extensive investigation and analysis form the basis of our valuations.Our team comprises experts with over ten years of experience working in leading consulting organizations.</p>
+      <div style={{ display: 'flex', alignItems: 'flex-start' }}>
+        <div style={{ flex: 2, marginLeft: '80px' }}>
+          <img
+            src="/valuationWhyUs.png"
+            alt="Why Choose Us"
+            style={{ width: '100%', height: 'auto' }}
+          />
         </div>
-        <div 
-          style={{ 
-            width: '550px', 
-            border: '1px solid #ddd', 
-            borderRadius: '10px', 
-            padding: '20px', 
-            boxShadow: '0 4px 8px rgba(0,0,0,0.2)', 
-            transition: 'box-shadow 0.3s ease, transform 0.3s ease',
-            cursor: 'pointer'
-          }}
-          onMouseOver={(e) => {
-            e.currentTarget.style.boxShadow = '0 6px 12px rgba(0,0,0,0.3)';
-            e.currentTarget.style.transform = 'scale(1.05)';
-          }}
-          onMouseOut={(e) => {
-            e.currentTarget.style.boxShadow = '0 4px 8px rgba(0,0,0,0.2)';
-            e.currentTarget.style.transform = 'scale(1)';
-          }}
-        >
-          <h3 style={{ fontSize: '16px', marginBottom: '5px' }}>Reliable Reports Approved by Big Accounting Firms:</h3>
-          <p style={{ fontSize: '14px' }}>This indicates that investors trust our reports..</p>
+
+        <div style={{ flex: 2, marginLeft: '20px' }}>
+          <h1 style={{ fontSize: '70px', marginBottom: '10px', color: '#a60424', fontWeight: 'bold' }}>Why Opt For Us?</h1>
+          <h2 style={{ fontSize: '18px', marginBottom: '20px' }}>
+            Our company using tried-and-true techniques
+          </h2>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '40px' }}>
+            <div
+              style={{
+                width: '550px',
+                border: '1px solid #ddd',
+                borderRadius: '10px',
+                padding: '20px',
+                boxShadow: '0 4px 8px rgba(0,0,0,0.2)',
+                transition: 'box-shadow 0.3s ease, transform 0.3s ease',
+                cursor: 'pointer'
+              }}
+              onMouseOver={(e) => {
+                e.currentTarget.style.boxShadow = '0 6px 12px rgba(0,0,0,0.3)';
+                e.currentTarget.style.transform = 'scale(1.05)';
+              }}
+              onMouseOut={(e) => {
+                e.currentTarget.style.boxShadow = '0 4px 8px rgba(0,0,0,0.2)';
+                e.currentTarget.style.transform = 'scale(1)';
+              }}
+            >
+              <h3 style={{ fontSize: '16px', marginBottom: '5px' }}>Data-Driven Insights:</h3>
+              <p style={{ fontSize: '14px' }}>Extensive investigation and analysis form the basis of our valuations.Our team comprises experts with over ten years of experience working in leading consulting organizations.</p>
+            </div>
+            <div
+              style={{
+                width: '550px',
+                border: '1px solid #ddd',
+                borderRadius: '10px',
+                padding: '20px',
+                boxShadow: '0 4px 8px rgba(0,0,0,0.2)',
+                transition: 'box-shadow 0.3s ease, transform 0.3s ease',
+                cursor: 'pointer'
+              }}
+              onMouseOver={(e) => {
+                e.currentTarget.style.boxShadow = '0 6px 12px rgba(0,0,0,0.3)';
+                e.currentTarget.style.transform = 'scale(1.05)';
+              }}
+              onMouseOut={(e) => {
+                e.currentTarget.style.boxShadow = '0 4px 8px rgba(0,0,0,0.2)';
+                e.currentTarget.style.transform = 'scale(1)';
+              }}
+            >
+              <h3 style={{ fontSize: '16px', marginBottom: '5px' }}>Reliable Reports Approved by Big Accounting Firms:</h3>
+              <p style={{ fontSize: '14px' }}>This indicates that investors trust our reports..</p>
+            </div>
+
+          </div>
         </div>
-       
       </div>
-    </div>
-  </div>
-      
 
-      <Variable/>
+
+      <Variable />
       <ContactUs />
       <Process />
-      
+
       <FAQs FaqTableData={valuationFaqs} heading="FAQs" />
       <Footer />
     </main>

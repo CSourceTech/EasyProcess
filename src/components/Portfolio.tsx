@@ -5,7 +5,7 @@ import { TfiArrowTopRight } from "react-icons/tfi";
 export default function Portfolio() {
   return (
     <section className="py-10 md:py-20 bg-[url('/images/hero/dotbg.png')] bg-cover bg-center">
-      <Heading color="white pb-10 underline">Our Portfolio</Heading>
+      <Heading color="white pb-10 ">Our Portfolio</Heading>
       <div className="grid grid-cols-1 lg:grid-cols-2 mx-2 md:mx-40 gap-8 md:gap-10">
         <div className="relative flex justify-center group">
           <div className="rounded-2xl overflow-hidden w-[544px] md:h-[424px]">
@@ -23,8 +23,8 @@ export default function Portfolio() {
             style={{ transition: "1s" }}
           >
             <div className="absolute right-2 top-2 md:right-6 -rotate-90 group-hover:rotate-0" style={{ transition: "1s" }}><TfiArrowTopRight size={24} /></div>
-            <h1 className="text-base md:text-xl underline">Financial Modelling</h1>
-            <h3 className="text-sm md:text-base underline">Project was based on valuation and information.</h3>
+            <h1 className="text-base md:text-xl ">Financial Modelling</h1>
+            <h3 className="text-sm md:text-base ">Project was based on valuation and information.</h3>
           </div>
         </div>
 
@@ -44,8 +44,8 @@ export default function Portfolio() {
             style={{ transition: "1s" }}
           >
             <div className="absolute right-2 top-2 md:right-6 -rotate-90 group-hover:rotate-0" style={{ transition: "1s" }}><TfiArrowTopRight size={24} /></div>
-            <h1 className="text-base md:text-xl underline">Valuation</h1>
-            <h3 className="text-sm md:text-base underline">Project was based on valuation and information.</h3>
+            <h1 className="text-base md:text-xl ">Valuation</h1>
+            <h3 className="text-sm md:text-base ">Project was based on valuation and information.</h3>
           </div>
         </div>
 
@@ -65,8 +65,8 @@ export default function Portfolio() {
             style={{ transition: "1s" }}
           >
             <div className="absolute right-2 top-2 md:right-6 -rotate-90 group-hover:rotate-0" style={{ transition: "1s" }}><TfiArrowTopRight size={24} /></div>
-            <h1 className="text-base md:text-xl underline">Accounting & Compliance</h1>
-            <h3 className="text-sm md:text-base underline">Project was based on valuation and information.</h3>
+            <h1 className="text-base md:text-xl ">Accounting & Compliance</h1>
+            <h3 className="text-sm md:text-base ">Project was based on valuation and information.</h3>
           </div>
         </div>
 
@@ -86,12 +86,12 @@ export default function Portfolio() {
             style={{ transition: "1s" }}
           >
             <div className="absolute right-2 top-2 md:right-6 -rotate-90 group-hover:rotate-0" style={{ transition: "1s" }}><TfiArrowTopRight size={24} /></div>
-            <h1 className="text-base md:text-xl underline">Valuation Summary</h1>
-            <h3 className="text-sm md:text-base underline">Project was based on valuation and information.</h3>
+            <h1 className="text-base md:text-xl ">Valuation Summary</h1>
+            <h3 className="text-sm md:text-base ">Project was based on valuation and information.</h3>
           </div>
         </div>
 
-       
+
       </div>
     </section>
   );

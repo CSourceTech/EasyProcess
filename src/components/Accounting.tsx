@@ -19,13 +19,13 @@ export default function Compilance() {
         bg: "/images/hero/ser1.jpg",
     },
     {
-        title: "Professional Services for Audit Support and Easily get ready for audits",
+        title: "Professional Services for Audit Support",
         desc: "Pre-audit planning and evaluation.Working together with auditors.",
         icon: <FaUserTie/>,
         bg: "/images/hero/ser2.jpg",
     },
     {
-        title: "Management of Accounts Receivable and Utilize our services to increase cash flow:",
+        title: "Management of Accounts Receivable",
         desc: "Effective invoice creation and delivery.Proactive collections and follow-up.Reconciliation of customer accounts. Reports and analysis that age.",
         icon: <FaFileInvoiceDollar />,
         bg: "/images/hero/ser3.jpg",
@@ -61,7 +61,7 @@ export default function Compilance() {
                   <div className="absolute -mt-6 group-hover:mt-8 md:group-hover:mt-10 bg-red-600 transition group-hover:duration-300 group-hover:rounded-xl group-hover:border-2 group-hover:border-red-600 p-2 rounded-full text-3xl text-white mx-auto shadow-xl group-hover:bg-white group-hover:text-red-600">
                     {fund.icon}
                   </div>
-                  <h3 className="text-2xl text-red-600 font-semibold ml-4 py-8 text-center mt-4 group-hover:mt-16 md:group-hover:mt-24 group-hover:text-xl">
+                  <h3 className="text-2xl text-red-600 font-semibold p-2 text-center mt-4 group-hover:mt-16 md:group-hover:mt-24 group-hover:text-xl">
                     {fund.title}
                   </h3>
                   <span className="mx-6 md:my-2 text-sm text-center opacity-0 group-hover:opacity-100 transition group-hover:duration-100 group-hover:delay-300 group-hover:text-[12px] md:group-hover:text-sm">

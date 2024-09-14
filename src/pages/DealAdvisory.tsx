@@ -60,7 +60,7 @@ const DealAdvisory = () => {
       <h2 style={{ fontSize: '18px', marginBottom: '20px' }}>
       We offer unique solutions tailored to your needs.
       </h2>
-      <div style={{ display: 'flex', flexDirection: 'column', gap: '40px' }}>
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '40px', padding: '20px 0' }}>
         <div 
           style={{ 
             width: '550px', 
@@ -179,7 +179,6 @@ const DealAdvisory = () => {
       <Guidance/>
       <ContactUs/>
       <Process/>
-      <Portfolio/>
       <FAQs FaqTableData={dealAdvisoryFaqs} heading="FAQs" />
       <Footer />
     </main>
