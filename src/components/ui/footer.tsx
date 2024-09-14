@@ -40,14 +40,14 @@ export default function Footer({ }: Props) {
         <div className='flex justify-start items-start gap-y-4 flex-col'>
           <div className='justify-center items-center gap-2 hidden md:flex'>
             <MdLocationPin className="text-3xl" />
-            <Link href="https://www.google.com/maps/search/A1+Tower,+Sohna+Road+Level+9,+Spaze+i-Tech+Park,+Sector+49,+Gurugram,+Haryana+122018/@28.3825261,77.0125651,13z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI0MDkwMy4wIKXMDSoASAFQAw%3D%3D">
-            <p className='max-w-md text-sm'>A1 Tower, Sohna Road Level 9, Spaze i-Tech Park, Sector 49, Gurugram, Haryana 122018</p>
+            <Link href="https://maps.app.goo.gl/CLqCQRnuQpAw1GfF9">
+              <p className='max-w-md text-sm'>B1-114, Sector 11, Faridabad</p>
             </Link>
           </div>
           <div className='flex justify-center items-center gap-2 md:hidden mt-4'>
             <MdLocationPin size={60} />
-            <Link href="https://www.google.com/maps/search/A1+Tower,+Sohna+Road+Level+9,+Spaze+i-Tech+Park,+Sector+49,+Gurugram,+Haryana+122018/@28.3825261,77.0125651,13z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI0MDkwMy4wIKXMDSoASAFQAw%3D%3D">
-            <p className='max-w-md text-sm'>A1 Tower, Sohna Road Level 9, Spaze i-Tech Park, Sector 49, Gurugram, Haryana 122018</p>
+            <Link href="https://maps.app.goo.gl/CLqCQRnuQpAw1GfF9">
+              <p className='max-w-md text-sm'>B1-114, Sector 11, Faridabad</p>
             </Link>
           </div>
           <div className='flex justify-center items-center gap-2'>
