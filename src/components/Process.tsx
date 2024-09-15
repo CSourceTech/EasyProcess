@@ -45,7 +45,7 @@ const Process = () => {
             justifyContent: "center",
             fontSize: "3rem",
             fontWeight: "bold",
-            color:"#d2042d"
+            color: "#d2042d"
           }}
         >
           Process
@@ -60,14 +60,14 @@ const Process = () => {
           />
         </div>
         <div className="md:hidden">
-        <div style={{ padding: "10px" }} className="text-center">
-      {sectionsData.map((section, index) => (
-        <div key={index} style={{ marginBottom: "30px" }}>
-          <h2 className="text-[#d2042d] font-bold text-base">{section.heading}</h2>
-          <p className="text-sm font-semibold">{section.description}</p>
-        </div>
-      ))}
-    </div>
+          <div style={{ padding: "10px" }} className="text-center">
+            {sectionsData.map((section, index) => (
+              <div key={index} style={{ marginBottom: "30px" }}>
+                <h2 className="text-[#d2042d] font-bold text-base">{section.heading}</h2>
+                <p className="text-sm font-semibold">{section.description}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </>
