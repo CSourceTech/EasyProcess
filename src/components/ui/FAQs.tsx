@@ -1,7 +1,5 @@
-import React, { useEffect, useState } from "react";
 import Heading from "./Heading";
 import { MdKeyboardArrowDown } from "react-icons/md";
-import Link from "next/link";
 
 type FAQProps = {
   FaqTableData: { question: string; answer: string }[];
@@ -9,6 +7,11 @@ type FAQProps = {
 };
 
 export default function FAQs({ FaqTableData = [], heading }: FAQProps) {
+
+  // if the answer has ● then line break
+  const formattedAnswer = (answer: string) => {
+    return answer.replace(/●/g, "<br/>●");
+  }
 
   return (
     <div className="py-12">
@@ -32,7 +35,7 @@ export default function FAQs({ FaqTableData = [], heading }: FAQProps) {
             </summary>
 
             <div className="mt-4 leading-relaxed text-[12px] md:text-base text-gray-700">
-              <div dangerouslySetInnerHTML={{ __html: qa.answer }} />
+              <div dangerouslySetInnerHTML={{ __html: formattedAnswer(qa.answer) }} />
             </div>
           </details>
         ))}

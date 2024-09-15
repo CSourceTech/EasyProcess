@@ -1,59 +1,109 @@
 export const fundFaqs = [
   {
-    question: "Which phases make up the fundraising process?",
+    question: "How do you value a startup that hasn’t yet generated revenue?",
     answer: `
-      There are various phases of fundraising: pre-seed, seed, series A, series B, and post-seed. Goals and funding sources vary from stage to stage.
+      To value an early-stage startup without revenue, we use a combination of methods to assess 
+potential value based on available data. We start by comparing your startup to similar 
+companies in the same industry and stage that have recently been acquired or funded. We 
+analyze key factors such as market size, growth potential, and recent funding trends. 
+Additionally, we apply the Venture Capital Method, which estimates future value based on 
+projected cash flows and planned funding rounds. 
       `,
   },
   {
-    question: "At each level, what are the primary funding sources?",
+    question: "Can you accurately value my startup if it lacks historical financial data?",
     answer: `
-      Pre-seed Stage: Bootstrapping, personal savings, and friends and family.
-Venture capital firms and angel investors are considered seed-stage investors.<br/>
-● Venture capital firms, private equity firms: Series A and above.<br/>
-● Other Funding: Debt finance and crowdfunding.
-
+      Yes, we can still provide an accurate valuation even without historical financial data. We 
+develop pro forma financials, which are forecasts of future revenue, expenses, and 
+profitability. We then assess the credibility of your projections and business plan, and use 
+market data and industry benchmarks to support our valuation. This approach allows us to 
+estimate your startup's value based on its future potential. 
       `,
   },
   {
-    question: "How are angel investors and venture capital firms different?",
+    question: "Is it advisable to use only the income approach or the market approach for startup valuation?",
     answer: `
-      Angel investors provide early-stage firms with assistance while investing their own capital. Investing higher sums in later phases, venture capital firms manage pooled funds.
+      It is generally not advisable to rely solely on one approach for startup valuation. Each approach has its limitations: 
+● Income Approach: Forecasting future cash flows can be challenging without a 
+substantial financial history. 
+● Market Approach: Finding suitable comparables for early-stage startups can be 
+difficult. 
+We recommend using both the income and market approaches to provide a 
+comprehensive valuation. This hybrid approach balances future cash flow projections 
+with market comparables, offering a well-rounded view of your startup's value
       `,
   },
   {
-    question: "How can you connect with investors in a productive way?",
+    question: "Will you provide a detailed breakdown of the valuation methodology and assumptions used?",
     answer: `
-      Tailor your strategy to each investor's preferences, emphasize critical KPIs,, and clearly explain your value.
+      Yes, we provide a comprehensive valuation report that includes a detailed breakdown of the 
+methodology used. This report outlines the valuation methods, key assumptions (such as 
+growth rates and discount rates), and the data sources. This transparency helps build trust 
+with investors and other stakeholders, and ensures our valuation adheres to internationally 
+accepted standards. 
       `,
   },
   {
-    question: "What differentiates EasyMyProcess?",
+    question: "What are the risks of using an inaccurate or poorly justified valuation?",
     answer: `
-      ● Track Record of Success: Securing finance is something we've done before.
-● Skilled Group: We have a rich history of consultants.
-* Tailored Plans: We create plans specifically for your company's need.
-Our extensive network allows us to put you in touch with the top investors.
-
+       An inaccurate or poorly justified valuation can have significant risks. Overvaluation might 
+lead to investor rejection and unrealistic expectations, while undervaluation could result in 
+missed investment opportunities or an unfavorable acquisition price. Both scenarios can 
+negatively impact your startup's prospects and decision-making processes. 
       `,
   },
   {
-    question: "How do you figure out how much money each step needs?",
+    question: "What are the most commonly accepted approaches for startup valuation?",
     answer: `
-      In addition to taking market shifts and obstacles into account, think about your business plan, growth, expenses, and objectives.
+      There are several approaches for startup valuation, but the most commonly accepted methods 
+are: 
+● Market Approach: Compares your startup to similar companies using market 
+multiples (e.g., P/E or P/S ratios). 
+● Income Approach: Discounts projected future cash flows to present value. 
+● Venture Capital Method: Estimates future value at an exit event and discounts it 
+based on perceived risk. 
+Each method provides different insights, and using a combination can offer a more 
+accurate valuation.
       `,
   },
   {
-    question: "How can corporate investors assist?",
+    question: "What additional services does your firm offer beyond the valuation report?",
     answer: `
-      They contribute networks, industry experience, and possible acquisition routes in addition to financial support.
+      Our firm provides a range of additional services beyond the valuation report. We assist with 
+fundraising by identifying suitable sources and strategies, advise on optimal capital structure, 
+support negotiation tactics, and offer guidance on financing options and investor 
+communications. Our goal is to act as a strategic partner in your startup's growth journey. 
       `,
   },
   {
     question:
-      "Which errors ought to be steered clear of when making an investor presentation?",
+      "How do you handle the valuation of intellectual property (IP) or technology?",
     answer: `
-      Steer away from confusing  pitches, overly optimistic approaches, ignorance of your audience, and risk-taking. Do your homework on potential investors and personalize your proposal.
+      Valuing intellectual property (IP) or technology involves several steps. We evaluate the 
+strength of patents or technology, assess market potential and competitive advantage, and 
+review existing licensing agreements for similar technologies. Depending on the nature of the 
+IP, we may use specific valuation methods such as the cost or market approach to determine 
+its value.
+      `,
+  },
+  {
+    question:
+      "Do you provide scenario modeling to illustrate how different growth paths impact valuation?",
+    answer: `
+      Yes, we offer scenario modeling as part of our valuation process. We create financial 
+projections based on various growth scenarios—optimistic, realistic, and pessimistic. This 
+modeling helps illustrate how different potential growth paths could affect your company's 
+valuation and provides a clearer picture of future performance. 
+      `,
+  },
+  {
+    question:
+      "How can a well-executed Purchase Price Allocation (PPA) benefit a business after an acquisition?",
+    answer: `
+A well-executed Purchase Price Allocation (PPA) offers several benefits beyond compliance. 
+It helps identify the value of intangible assets such as brand equity or customer base, which 
+can be crucial for strategic planning, budgeting, and tax optimization. A thorough PPA 
+provides valuable insights for future business decisions and financial management.
       `,
   },
 ];
