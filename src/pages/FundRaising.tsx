@@ -47,7 +47,7 @@ const FundRaising = () => {
       <Navbar />
       <Hero items={fundingItems} />
 
-      <div style={{ display: 'flex', alignItems: 'flex-start' }}>
+      <div className="flex items-center">
         <div style={{ flex: 2, marginLeft: '80px' }}>
           <img
             src="/FundRaisingwhyus.png"
