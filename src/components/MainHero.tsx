@@ -111,10 +111,10 @@ export default function MainHero() {
             </div>
           </div>
           <div>
-            <div className="h-[550px] rounded-[80px] w-full flex flex-col md:flex-row overflow-hidden left-1/2 -translate-x-1/2  relative z-50 bg-white">
+            <div className="h-[600px] rounded-[80px] border-[30px] border-black w-full flex flex-col md:flex-row overflow-hidden left-1/2 -translate-x-1/2  relative z-50 bg-white hero-shadow">
               <div className="overflow-hidden h-1/5 md:h-full w-full md:w-1/5 relative">
-                <div className="bg-[url('/images/hero/img1.jpg')] bg-cover bg-center h-full w-full md:rounded-l-[80px] opacity-60 hover:scale-125 transition duration-1000"></div>
-                <div className="flex flex-col justify-center gap-2 md:gap-6 absolute top-1/2 -translate-y-1/2 md:top-1/2 pl-8">
+                <div className="bg-[url('/images/hero/img1.jpg')] bg-cover bg-center h-full w-full md:rounded-l-[70px] opacity-60 hover:scale-125 transition duration-1000"></div>
+                <div className="flex flex-col justify-center gap-2 md:gap-6 absolute top-1/2 -translate-y-1/2 md:top-3/4 px-4">
                   <h2 className="text-xl md:text-4xl text-red-600 font-black">
                     Quality Assurance
                   </h2>
@@ -178,7 +178,7 @@ export default function MainHero() {
                 </div>
               </div>
               <div className="overflow-hidden h-1/5 md:h-full w-full md:w-1/5 relative">
-                <div className="bg-[url('/images/hero/img5.jpg')] bg-cover bg-center h-full rounded-r-[60px] opacity-30 hover:scale-125  transition duration-1000"></div>
+                <div className="bg-[url('/images/hero/img5.jpg')] bg-cover bg-center h-full rounded-r-[50px] opacity-30 hover:scale-125  transition duration-1000"></div>
                 <div className="flex flex-col justify-center gap-2 md:gap-6  absolute top-1/2 -translate-y-1/2 md:top-3/4 pl-6 md:pr-4 md:pl-4">
                   <h2 className="text-xl md:text-4xl text-red-600 font-black">
                     Expert Team

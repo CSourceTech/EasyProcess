@@ -52,7 +52,7 @@ and adherence to regulatory standards`,
     bg: "/images/hero/ser5.png",
   },
   {
-    title: "Valuations Under SEBI & Stock Exchange Regulations",
+    title: "Valuations Under SEBI & SE Regulations",
     desc: `Navigate regulatory 
 complexities with precision. We offer valuation services that comply with SEBI and 
 stock exchange regulations, ensuring regulatory adherence and credibility. 

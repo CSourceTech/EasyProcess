@@ -1,18 +1,14 @@
 import React from "react";
 import { Poppins } from "next/font/google";
-import Hero from "@/components/Hero";
 import Head from "next/head";
-import WhyUs from "@/components/ui/WhyUs";
-import HomeService from "@/components/HomeService";
-import ContactUs from "@/components/ContactUs";
 import Navbar from "@/components/ui/navbar";
+import Funding from "@/components/Funding";
+import ContactUs from "@/components/ContactUs";
 import Process from "@/components/Process";
-import Portfolio from "@/components/Portfolio";
 import FAQs from "@/components/ui/FAQs";
 import Footer from "@/components/ui/footer";
-import Funding from "@/components/Funding";
-import { fundingItems } from "@/constants/carousel";
 import { fundFaqs } from "@/constants/faqs";
+import Image from "next/image";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -20,10 +16,31 @@ const poppins = Poppins({
 });
 
 const FundRaising = () => {
+  const whyChooseUsItems = [
+    {
+      title: "Multi-Method Valuation",
+      description: "We leverage a blend of industry-leading methodologies—including market, income, and cost approaches—to deliver a comprehensive and accurate business assessment.",
+    },
+    {
+      title: "Data-Driven Excellence",
+      description: "Our valuations are grounded in meticulous research, incorporating competitor analysis, industry trends, and economic factors, ensuring you receive insights based on real-world data.",
+    },
+    {
+      title: "Reliable Financial Modeling",
+      description: "We create robust financial models featuring detailed forecasts, key ratios, and interactive dashboards, so your projections are supported by solid evidence.",
+    },
+    {
+      title: "Decades of Expertise",
+      description: "With over ten years in top consulting firms, our experienced team handles complex valuations with precision and adheres to international standards, providing you with unmatched expertise.",
+    },
+    {
+      title: "Investor-Approved Reports",
+      description: "Our high-quality valuations are consistently recognized and accepted by Big 4 accounting firms, reflecting their credibility and meeting the highest investor expectations.",
+    },
+  ];
+
   return (
-    <main
-      className={`flex flex-col overflow-x-hidden bg-white min-h-screen w-full ${poppins.className}`}
-    >
+    <main className={`flex flex-col overflow-x-hidden bg-white min-h-screen w-full ${poppins.className}`}>
       <Head>
         <meta
           name="title"
@@ -45,153 +62,52 @@ const FundRaising = () => {
         <title>Ease My Process</title>
       </Head>
       <Navbar />
-      <Hero items={fundingItems} />
 
-      <div className="flex items-center">
-        <div style={{ flex: 2, marginLeft: '80px' }}>
-          <img
-            src="/FundRaisingwhyus.png"
-            alt="Why Choose Us"
-            style={{ width: '100%', height: 'auto' }}
-          />
-        </div>
+      <div className="text-center mt-[91px] md:mt-[140px]">
+        <h1 className="text-5xl lg:text-7xl mb-4 text-[#a60424] font-bold">Why Choose Us?</h1>
+        <h2 className="text-xl mb-8">
+          Many companies require capital, but our approach is distinct:
+        </h2>
+        <div className="flex flex-col lg:flex-row items-center justify-center px-4 lg:px-20 pb-12 gap-8">
+          <div className="lg:w-1/2 space-y-6">
+            {whyChooseUsItems.slice(0, 2).map((item, index) => (
+              <div
+                key={index}
+                className="border border-gray-200 rounded-lg p-6 shadow-md transition-all duration-300 hover:shadow-lg hover:scale-105 cursor-pointer"
+              >
+                <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
+                <p className="text-sm">{item.description}</p>
+              </div>
+            ))}
+          </div>
 
-        <div style={{ flex: 2, marginLeft: '20px' }}>
-          <h1 style={{ fontSize: '70px', marginBottom: '10px', color: '#a60424', fontWeight: 'bold' }}>Why Choose Us?</h1>
-          <h2 style={{ fontSize: '18px', marginBottom: '20px' }}>
-            Many companies require capital, but our approach is distinct:
-          </h2>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '40px', padding: '10px 0 20px' }}>
-            <div
-              style={{
-                width: '550px',
-                border: '1px solid #ddd',
-                borderRadius: '10px',
-                padding: '20px',
-                boxShadow: '0 4px 8px rgba(0,0,0,0.2)',
-                transition: 'box-shadow 0.3s ease, transform 0.3s ease',
-                cursor: 'pointer'
-              }}
-              onMouseOver={(e) => {
-                e.currentTarget.style.boxShadow = '0 6px 12px rgba(0,0,0,0.3)';
-                e.currentTarget.style.transform = 'scale(1.05)';
-              }}
-              onMouseOut={(e) => {
-                e.currentTarget.style.boxShadow = '0 4px 8px rgba(0,0,0,0.2)';
-                e.currentTarget.style.transform = 'scale(1)';
-              }}
-            >
-              <h3 style={{ fontSize: '16px', marginBottom: '5px' }}>Multi-Method Valuation</h3>
-              <p style={{ fontSize: '14px' }}>We leverage a blend of industry-leading methodologies—
-                including market, income, and cost approaches—to deliver a comprehensive and
-                accurate business assessment.</p>
-            </div>
-            <div
-              style={{
-                width: '550px',
-                border: '1px solid #ddd',
-                borderRadius: '10px',
-                padding: '20px',
-                boxShadow: '0 4px 8px rgba(0,0,0,0.2)',
-                transition: 'box-shadow 0.3s ease, transform 0.3s ease',
-                cursor: 'pointer'
-              }}
-              onMouseOver={(e) => {
-                e.currentTarget.style.boxShadow = '0 6px 12px rgba(0,0,0,0.3)';
-                e.currentTarget.style.transform = 'scale(1.05)';
-              }}
-              onMouseOut={(e) => {
-                e.currentTarget.style.boxShadow = '0 4px 8px rgba(0,0,0,0.2)';
-                e.currentTarget.style.transform = 'scale(1)';
-              }}
-            >
-              <h3 style={{ fontSize: '16px', marginBottom: '5px' }}>Data-Driven Excellence</h3>
-              <p style={{ fontSize: '14px' }}>Our valuations are grounded in meticulous research,
-                incorporating competitor analysis, industry trends, and economic factors, ensuring
-                you receive insights based on real-world data.</p>
-            </div>
-            <div
-              style={{
-                width: '550px',
-                border: '1px solid #ddd',
-                borderRadius: '10px',
-                padding: '20px',
-                boxShadow: '0 4px 8px rgba(0,0,0,0.2)',
-                transition: 'box-shadow 0.3s ease, transform 0.3s ease',
-                cursor: 'pointer'
-              }}
-              onMouseOver={(e) => {
-                e.currentTarget.style.boxShadow = '0 6px 12px rgba(0,0,0,0.3)';
-                e.currentTarget.style.transform = 'scale(1.05)';
-              }}
-              onMouseOut={(e) => {
-                e.currentTarget.style.boxShadow = '0 4px 8px rgba(0,0,0,0.2)';
-                e.currentTarget.style.transform = 'scale(1)';
-              }}
-            >
-              <h3 style={{ fontSize: '16px', marginBottom: '5px' }}>Reliable Financial Modeling</h3>
-              <p style={{ fontSize: '14px' }}>Reliable Financial Modeling: We create robust financial models featuring detailed
-                forecasts, key ratios, and interactive dashboards, so your projections are supported by
-                solid evidence.</p>
-            </div>
-            <div
-              style={{
-                width: '550px',
-                border: '1px solid #ddd',
-                borderRadius: '10px',
-                padding: '20px',
-                boxShadow: '0 4px 8px rgba(0,0,0,0.2)',
-                transition: 'box-shadow 0.3s ease, transform 0.3s ease',
-                cursor: 'pointer'
-              }}
-              onMouseOver={(e) => {
-                e.currentTarget.style.boxShadow = '0 6px 12px rgba(0,0,0,0.3)';
-                e.currentTarget.style.transform = 'scale(1.05)';
-              }}
-              onMouseOut={(e) => {
-                e.currentTarget.style.boxShadow = '0 4px 8px rgba(0,0,0,0.2)';
-                e.currentTarget.style.transform = 'scale(1)';
-              }}
-            >
-              <h3 style={{ fontSize: '16px', marginBottom: '5px' }}>Decades of Expertise</h3>
-              <p style={{ fontSize: '14px' }}>With over ten years in top consulting firms, our experienced
-                team handles complex valuations with precision and adheres to international
-                standards, providing you with unmatched expertise</p>
-            </div>
-            <div
-              style={{
-                width: '550px',
-                border: '1px solid #ddd',
-                borderRadius: '10px',
-                padding: '20px',
-                boxShadow: '0 4px 8px rgba(0,0,0,0.2)',
-                transition: 'box-shadow 0.3s ease, transform 0.3s ease',
-                cursor: 'pointer'
-              }}
-              onMouseOver={(e) => {
-                e.currentTarget.style.boxShadow = '0 6px 12px rgba(0,0,0,0.3)';
-                e.currentTarget.style.transform = 'scale(1.05)';
-              }}
-              onMouseOut={(e) => {
-                e.currentTarget.style.boxShadow = '0 4px 8px rgba(0,0,0,0.2)';
-                e.currentTarget.style.transform = 'scale(1)';
-              }}
-            >
-              <h3 style={{ fontSize: '16px', marginBottom: '5px' }}>Investor-Approved Reports</h3>
-              <p style={{ fontSize: '14px' }}>Our high-quality valuations are consistently recognized
-                and accepted by Big 4 accounting firms, reflecting their credibility and meeting the
-                highest investor expectations</p>
-            </div>
+          <div className="lg:w-1/3 flex justify-center items-center">
+            <Image
+              src="/FundRaisingwhyus.png"
+              alt="Why Choose Us"
+              width={400}
+              height={400}
+              className="w-full h-auto object-contain"
+            />
+          </div>
+
+          <div className="lg:w-1/2 space-y-6">
+            {whyChooseUsItems.slice(2).map((item, index) => (
+              <div
+                key={index}
+                className="border border-gray-200 rounded-lg p-6 shadow-md transition-all duration-300 hover:shadow-lg hover:scale-105 cursor-pointer"
+              >
+                <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
+                <p className="text-sm">{item.description}</p>
+              </div>
+            ))}
           </div>
         </div>
       </div>
 
-
-
       <Funding />
       <ContactUs />
       <Process />
-
       <FAQs FaqTableData={fundFaqs} heading="FAQs" />
       <Footer />
     </main>

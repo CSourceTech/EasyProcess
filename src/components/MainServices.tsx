@@ -103,7 +103,7 @@ function ServiceCard({
       className="w-full"
     >
       {/* bottom-0 left-1/2 -translate-x-1/2 -translate-y-1/2 */}
-      <div className="relative rounded-lg group shadow-lg md:w-96  h-[20rem] md:h-96 overflow-hidden hover:shadow-2xl mb-10">
+      <div className="relative rounded-lg group shadow-lg md:w-96  h-[20rem] md:h-96 overflow-hidden hover:shadow-2xl mb-10 hero-shadow">
         <Image src={bg} alt={title} width={1000} height={1000} className="" />
         <div className="w-full h-[120px] group-hover:h-full flex items-center flex-col duration-500 bg-white absolute bottom-0 group-hover:bottom-1/5 left-0">
           <div className="absolute -mt-6 group-hover:mt-3 md:group-hover:mt-10 bg-red-600 transition group-hover:duration-300 group-hover:rounded-xl group-hover:border-2 group-hover:border-red-600 p-2 rounded-full text-3xl text-white mx-auto shadow-xl group-hover:bg-white group-hover:text-red-600">
