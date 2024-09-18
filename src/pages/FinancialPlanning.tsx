@@ -60,7 +60,7 @@ const FinancialPlanning = () => {
       <h2 style={{ fontSize: '18px', marginBottom: '20px' }}>
       We offer unique solutions tailored to your needs.
       </h2>
-      <div style={{ display: 'flex', flexDirection: 'column', gap: '30px' }}>
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '30px', padding:'0 0 20px' }}>
         <div 
           style={{ 
             width: '550px', 

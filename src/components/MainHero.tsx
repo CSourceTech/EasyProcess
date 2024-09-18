@@ -111,7 +111,7 @@ export default function MainHero() {
             </div>
           </div>
           <div>
-            <div className="h-[600px] rounded-[80px] border-[30px] border-black w-full flex flex-col md:flex-row overflow-hidden left-1/2 -translate-x-1/2  relative z-50 bg-white hero-shadow">
+            <div className="h-[600px] rounded-[80px] border-[30px] border-black w-full flex flex-col md:flex-row overflow-hidden left-1/2 -translate-x-1/2  relative z-50 bg-white global-shadow">
               <div className="overflow-hidden h-1/5 md:h-full w-full md:w-1/5 relative">
                 <div className="bg-[url('/images/hero/img1.jpg')] bg-cover bg-center h-full w-full md:rounded-l-[70px] opacity-60 hover:scale-125 transition duration-1000"></div>
                 <div className="flex flex-col justify-center gap-2 md:gap-6 absolute top-1/2 -translate-y-1/2 md:top-3/4 px-4">
