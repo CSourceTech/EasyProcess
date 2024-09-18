@@ -4,64 +4,91 @@ import { FaLandmarkDome } from "react-icons/fa6";
 import { IoStatsChart } from "react-icons/io5";
 import { MdAutoGraph } from "react-icons/md";
 import { PiGraphBold } from "react-icons/pi";
+import { MdOutlineBusinessCenter } from "react-icons/md";
+import { FaMoneyBillWave } from "react-icons/fa";
 
 import Image from "next/image";
 
 
 export default function Funding() {
 
-  const funding = [{
-    title: "Startup Valuation",
-    desc: `Dive into the dynamic world of startups with our tailored 
+  //   For Accounting Purposes: Compliance with IFRS, US GAAPs, and IndAS
+  //   standards. 
+  // o For Tax Purposes: Adherence to Rule 11UA / 11UB of Income - tax Rules and 
+  // transfer pricing regulations in India. 
+  // o For Corporate Law and FEMA Compliance: Accurate valuations to meet 
+  // Indian corporate and foreign exchange regulations.
+  const funding = [
+    {
+      title: "Business Valuation",
+      desc: `Reveal the true value of your business through comprehensive 
+research into competitors, industry trends, market dynamics, and economic 
+conditions. We provide a clear picture of your business's worth to help you make 
+informed decisions`,
+      icon: <MdOutlineBusinessCenter />,
+      bg: "/images/hero/ser7.jpg",
+    },
+    {
+      title: "Startup Valuation",
+      desc: `Dive into the dynamic world of startups with our tailored 
 valuation techniques. We offer precise assessments that provide clarity for both 
 investors and founders, ensuring your emerging venture is accurately valued. 
 `,
-    icon: <FaHandHoldingUsd />,
-    bg: "/images/hero/ser1.jpg",
-  },
-  {
-    title: "Valuation of Intangible Assets",
-    desc: `Unlock the hidden value in your brand, technology, 
+      icon: <FaHandHoldingUsd />,
+      bg: "/images/hero/ser1.jpg",
+    },
+    {
+      title: "Valuation of Intangible Assets",
+      desc: `Unlock the hidden value in your brand, technology, 
     and intellectual property. We optimize purchase prices and valuations in line with 
     IFRS, US GAAPs, or IndAS standards`,
-    icon: <GiAngelWings />,
-    bg: "/images/hero/ser3.jpg",
-  },
-  {
-    title: "Goodwill Impairment Testing",
-    desc: `Address goodwill impairment issues effectively 
+      icon: <GiAngelWings />,
+      bg: "/images/hero/ser3.jpg",
+    },
+    {
+      title: "Goodwill Impairment Testing",
+      desc: `Address goodwill impairment issues effectively 
     while adhering to IFRS, US GAAPs, or IndAS requirements. We provide detailed 
     analysis to ensure compliance and accuracy`,
-    icon: <FaLandmarkDome />,
-    bg: "/images/hero/ser4.png",
-  },
-  {
-    title: "Valuation for Mergers and Restructuring",
-    desc: `Valuation for Mergers and Restructuring: Navigate mergers, spin-offs, and 
+      icon: <FaLandmarkDome />,
+      bg: "/images/hero/ser4.png",
+    },
+    {
+      title: "Valuation for Mergers and Restructuring",
+      desc: `Valuation for Mergers and Restructuring: Navigate mergers, spin-offs, and 
 restructuring with confidence. Our precise valuation insights help determine fair swap 
 ratios and strategic paths for successful transitions`,
-    icon: <IoStatsChart />,
-    bg: "/images/hero/ser2.jpg",
-  },
-  {
-    title: "IBBI Registered Valuations",
-    desc: `Rely on our expertise as registered valuers under the 
+      icon: <IoStatsChart />,
+      bg: "/images/hero/ser2.jpg",
+    },
+    {
+      title: "IBBI Registered Valuations",
+      desc: `Rely on our expertise as registered valuers under the 
 Companies Act, 2013, and Insolvency & Bankruptcy guidelines, ensuring accuracy 
 and adherence to regulatory standards`,
-    icon: <MdAutoGraph />,
-    bg: "/images/hero/ser5.png",
-  },
-  {
-    title: "Valuations Under SEBI & SE Regulations",
-    desc: `Navigate regulatory 
+      icon: <MdAutoGraph />,
+      bg: "/images/hero/ser5.png",
+    },
+    {
+      title: "Valuations Under SEBI & SE Regulations",
+      desc: `Navigate regulatory 
 complexities with precision. We offer valuation services that comply with SEBI and 
 stock exchange regulations, ensuring regulatory adherence and credibility. 
 `,
-    icon: <PiGraphBold />,
-    bg: "/images/hero/ser6.png",
-  },
+      icon: <PiGraphBold />,
+      bg: "/images/hero/ser6.png",
+    },
+    {
+      title: "Valuation of Legal Entities, Shares, and Complex Securities",
+      desc: ` For Accounting Purposes: Compliance with IFRS, US GAAPs, and IndAS 
+standards. For Tax Purposes: Adherence to Rule 11UA/11UB of Income-tax Rules and 
+transfer pricing regulations in India. For Corporate Law and FEMA Compliance: Accurate valuations to meet 
+Indian corporate and foreign exchange regulations.
+`,
+      icon: <FaMoneyBillWave />,
+      bg: "/images/hero/ser8.jpg",
+    },
   ]
-
 
   return (
 
