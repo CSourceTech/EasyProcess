@@ -49,7 +49,7 @@ export default function Compilance() {
   return (
 
     <div className="w-full py-10 bg-[#a60424]">
-      <div className="mx-auto">
+      <div className="container mx-auto">
         <h1 className="text-2xl md:text-5xl text-white font-bold flex justify-center mb-10 text-center" >
           Accounting and Compilance's Services
         </h1>

@@ -54,7 +54,7 @@ export default function Pitch() {
   return (
 
     <div className="w-full py-10 bg-[#a60424]">
-      <div className="mx-auto">
+      <div className="mx-auto container">
         <h1 className="text-3xl md:text-5xl text-white font-bold flex justify-center mb-10 text-center" >
           Pitch and Deck's Services
         </h1>

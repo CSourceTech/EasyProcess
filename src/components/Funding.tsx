@@ -80,10 +80,9 @@ stock exchange regulations, ensuring regulatory adherence and credibility.
     },
     {
       title: "Valuation of Legal Entities, Shares, and Complex Securities",
-      desc: ` For Accounting Purposes: Compliance with IFRS, US GAAPs, and IndAS 
+      desc: `For Accounting Purposes: Compliance with IFRS, US GAAPs, and IndAS 
 standards. For Tax Purposes: Adherence to Rule 11UA/11UB of Income-tax Rules and 
-transfer pricing regulations in India. For Corporate Law and FEMA Compliance: Accurate valuations to meet 
-Indian corporate and foreign exchange regulations.
+transfer pricing regulations in India.
 `,
       icon: <FaMoneyBillWave />,
       bg: "/images/hero/ser8.jpg",
@@ -93,7 +92,7 @@ Indian corporate and foreign exchange regulations.
   return (
 
     <div className="w-full py-10 bg-[#a60424]">
-      <div className="mx-auto">
+      <div className="container mx-auto">
         <h1 className="text-3xl md:text-5xl text-white font-bold flex justify-center mb-10 text-center" >
           Types of Financial Support
         </h1>
