@@ -8,10 +8,14 @@ type FAQProps = {
 
 export default function FAQs({ FaqTableData = [], heading }: FAQProps) {
 
-  // if the answer has ● then line break
+  // format the answer to include line breaks
   const formattedAnswer = (answer: string) => {
-    return answer.replace(/●/g, "<br/>●");
-  }
+    return answer
+      .replace(/●/g, "<br>●")  // Ensure "●" starts on a new line
+      .replace(/•/g, "<br>•")  // Ensure "•" starts on a new line
+      .replace(/\d+\./g, "<br>$&") // Ensure any number followed by . starts on a new line
+  };
+
 
   return (
     <div className="py-12">

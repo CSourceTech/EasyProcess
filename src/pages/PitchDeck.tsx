@@ -10,9 +10,10 @@ import Process from "@/components/Process";
 import Portfolio from "@/components/Portfolio";
 import FAQs from "@/components/ui/FAQs";
 import Footer from "@/components/ui/footer";
-import { homeFaqs, pitchDeckFaqs } from "@/constants/faqs";
+import { pitchFaqs } from "@/constants/faqs";
 import { pitchItems } from "@/constants/carousel";
 import Pitch from "@/components/Pitch";
+import Image from "next/image";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -20,6 +21,25 @@ const poppins = Poppins({
 });
 
 const PitchDeck = () => {
+  const whyChooseUsItems = [
+    {
+      title: "Expert Team",
+      description: "Our powerhouse includes M&A consultants, PowerPoint specialists, UX/UI designers, and branding advisors.",
+    },
+    {
+      title: "Comprehensive Market Research",
+      description: "Gain insights into market size, trends, and competitors to sharpen your strategy.",
+    },
+    {
+      title: "Robust Financial Modeling",
+      description: "We provide detailed financial models that deliver clear projections and insights tailored for your startup.",
+    },
+    {
+      title: "Proven Track Record",
+      description: "With over a decade of experience crafting compelling presentations, we help you impress investors, attract customers, and drive growth.",
+    },
+  ];
+
   return (
     <main
       className={`flex flex-col overflow-x-hidden bg-white min-h-screen w-full ${poppins.className}`}
@@ -47,99 +67,54 @@ const PitchDeck = () => {
       <Navbar />
       <Hero items={pitchItems} />
 
-      <div style={{ display: 'flex', alignItems: 'flex-start' }}>
-    <div style={{ flex: 2, marginLeft: '80px' }}>
-      <img 
-        src="/pitchDeck.png" 
-        alt="Why Choose Us" 
-        style={{ width: '100%', height: 'auto' }}
-      />
-    </div>
+      <div className="text-center mt-[91px] md:mt-[140px]">
+        <h1 className="text-5xl lg:text-7xl mb-4 text-[#a60424] font-bold">Why Choose Us?</h1>
+        <h2 className="text-xl mb-8">
+          Many companies require capital, but our approach is distinct:
+        </h2>
+        <div className="flex flex-col lg:flex-row items-center justify-center px-4 lg:px-20 pb-12 gap-8">
+          <div className="lg:w-1/2 space-y-6">
+            {whyChooseUsItems.slice(0, 2).map((item, index) => (
+              <div
+                key={index}
+                className="border border-gray-200 rounded-lg p-6 shadow-md transition-all duration-300 hover:shadow-lg hover:scale-105 cursor-pointer"
+              >
+                <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
+                <p className="text-sm">{item.description}</p>
+              </div>
+            ))}
+          </div>
 
-    <div style={{ flex: 2, marginLeft: '20px' }}>
-      <h1 style={{ fontSize: '70px', marginBottom: '10px', color: '#a60424' , fontWeight:'bold' }}>Why Decide on Us?</h1>
-      <h2 style={{ fontSize: '18px', marginBottom: '20px' }}>
-      Our company using tried-and-true techniques
-      </h2>
-      <div style={{ display: 'flex', flexDirection: 'column', gap: '40px' }}>
-        <div 
-          style={{ 
-            width: '550px', 
-            border: '1px solid #ddd', 
-            borderRadius: '10px', 
-            padding: '20px', 
-            boxShadow: '0 4px 8px rgba(0,0,0,0.2)', 
-            transition: 'box-shadow 0.3s ease, transform 0.3s ease',
-            cursor: 'pointer'
-          }}
-          onMouseOver={(e) => {
-            e.currentTarget.style.boxShadow = '0 6px 12px rgba(0,0,0,0.3)';
-            e.currentTarget.style.transform = 'scale(1.05)';
-          }}
-          onMouseOut={(e) => {
-            e.currentTarget.style.boxShadow = '0 4px 8px rgba(0,0,0,0.2)';
-            e.currentTarget.style.transform = 'scale(1)';
-          }}
-        >
-          <h3 style={{ fontSize: '16px', marginBottom: '5px' }}>Increase Your Chances by 75%:</h3>
-          <p style={{ fontSize: '14px' }}>We Draft Excellent Business Plans, Financial Models, Pitch Decks, and Teasers. Our team of experts consists of consultants, experts in PowerPoint, designers, and advisors on branding.</p>
+          <div className="lg:w-1/3 flex justify-center items-center">
+            <Image
+              src="/pitchDeck.png"
+              alt="Why Choose Us"
+              width={400}
+              height={400}
+              className="w-full h-auto object-contain"
+            />
+          </div>
+
+          <div className="lg:w-1/2 space-y-6">
+            {whyChooseUsItems.slice(2).map((item, index) => (
+              <div
+                key={index}
+                className="border border-gray-200 rounded-lg p-6 shadow-md transition-all duration-300 hover:shadow-lg hover:scale-105 cursor-pointer"
+              >
+                <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
+                <p className="text-sm">{item.description}</p>
+              </div>
+            ))}
+          </div>
         </div>
-        <div 
-          style={{ 
-            width: '550px', 
-            border: '1px solid #ddd', 
-            borderRadius: '10px', 
-            padding: '20px', 
-            boxShadow: '0 4px 8px rgba(0,0,0,0.2)', 
-            transition: 'box-shadow 0.3s ease, transform 0.3s ease',
-            cursor: 'pointer'
-          }}
-          onMouseOver={(e) => {
-            e.currentTarget.style.boxShadow = '0 6px 12px rgba(0,0,0,0.3)';
-            e.currentTarget.style.transform = 'scale(1.05)';
-          }}
-          onMouseOut={(e) => {
-            e.currentTarget.style.boxShadow = '0 4px 8px rgba(0,0,0,0.2)';
-            e.currentTarget.style.transform = 'scale(1)';
-          }}
-        >
-          <h3 style={{ fontSize: '16px', marginBottom: '5px' }}>Market Research:</h3>
-          <p style={{ fontSize: '14px' }}>Our team conducts comprehensive studies on market size, trends, and rivals."</p>
-        </div>
-        <div 
-          style={{ 
-            width: '550px', 
-            border: '1px solid #ddd', 
-            borderRadius: '10px', 
-            padding: '20px', 
-            boxShadow: '0 4px 8px rgba(0,0,0,0.2)', 
-            transition: 'box-shadow 0.3s ease, transform 0.3s ease',
-            cursor: 'pointer'
-          }}
-          onMouseOver={(e) => {
-            e.currentTarget.style.boxShadow = '0 6px 12px rgba(0,0,0,0.3)';
-            e.currentTarget.style.transform = 'scale(1.05)';
-          }}
-          onMouseOut={(e) => {
-            e.currentTarget.style.boxShadow = '0 4px 8px rgba(0,0,0,0.2)';
-            e.currentTarget.style.transform = 'scale(1)';
-          }}
-        >
-          <h3 style={{ fontSize: '16px', marginBottom: '5px' }}>Comprehensive Financial Models:</h3>
-          <p style={{ fontSize: '14px' }}>Our forecasts and insights are explained in detail.
-          Years of Experience: We've been creating presentations that wow investors, draw in clients, and advance your business for more than ten years. </p>
-        </div>
-       
       </div>
-    </div>
-  </div>
-      
+
 
       <Pitch />
       <ContactUs />
       <Process />
-      
-      <FAQs FaqTableData={homeFaqs} heading="FAQs" />
+
+      <FAQs FaqTableData={pitchFaqs} heading="FAQs" />
       <Footer />
     </main>
   );
