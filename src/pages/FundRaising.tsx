@@ -63,46 +63,53 @@ const FundRaising = () => {
       </Head>
       <Navbar />
 
-      <div className="text-center mt-[91px] md:mt-[140px]">
-        <h1 className="text-5xl lg:text-7xl mb-4 text-[#a60424] font-bold">Why Choose Us?</h1>
-        <h2 className="text-xl mb-8">
+      <div className="text-center mt-[91px] md:mt-[140px] my-20">
+        <h1 className="text-4xl lg:text-7xl mb-4 text-[#a60424] text-center font-bold my-4">Why Choose Us?</h1>
+        <h2 className="text-sm md:text-xl mb-32 md:mb-28 w-[90%] md:w-full">
           Many companies require capital, but our approach is distinct:
         </h2>
-        <div className="flex flex-col lg:flex-row items-center justify-center px-4 lg:px-20 pb-12 gap-8">
-          <div className="lg:w-1/2 space-y-6">
-            {whyChooseUsItems.slice(0, 2).map((item, index) => (
-              <div
-                key={index}
-                className="border border-gray-200 rounded-lg p-6 shadow-md transition-all duration-300 hover:shadow-lg hover:scale-105 cursor-pointer"
-              >
-                <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
-                <p className="text-sm">{item.description}</p>
-              </div>
-            ))}
-          </div>
+        <div className="relative w-full h-[500px] flex flex-col gap-6 md:gap-0 my-10 md:flex-row items-center justify-center">
+  {/* Central Circular Image */}
+  <div className="absolute w-[400px] h-[400px] items-center justify-center hidden md:flex">
+    <Image
+      src="/FundRaisingwhyus.png"
+      alt="Circular Image"
+      width={450}
+      height={150}
+      className="rounded-full object-contain p-10"
+    />
+  </div>
 
-          <div className="lg:w-1/3 flex justify-center items-center">
-            <Image
-              src="/FundRaisingwhyus.png"
-              alt="Why Choose Us"
-              width={400}
-              height={400}
-              className="w-full h-auto object-contain"
-            />
-          </div>
+  {/* Surrounding Content Boxes */}
+  <div className="md:absolute md:-top-20 md:left-[50%] md:transform md:-translate-x-1/2 w-[90%] md:w-[30%]">
+    <div className="border border-gray-200 rounded-lg p-6 shadow-md">
+      <h3 className="text-base md:text-lg font-semibold mb-2">{whyChooseUsItems[0].title}</h3>
+      <p className="text-[12px] md:text-sm">{whyChooseUsItems[0].description}</p>
+    </div>
+  </div>
 
-          <div className="lg:w-1/2 space-y-6">
-            {whyChooseUsItems.slice(2).map((item, index) => (
-              <div
-                key={index}
-                className="border border-gray-200 rounded-lg p-6 shadow-md transition-all duration-300 hover:shadow-lg hover:scale-105 cursor-pointer"
-              >
-                <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
-                <p className="text-sm">{item.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
+  <div className="md:absolute md:top-[50%] md:right-10 md:transform md:-translate-y-1/2 w-[90%] md:w-[30%]">
+    <div className="border border-gray-200 rounded-lg p-6 shadow-md">
+      <h3 className="text-base md:text-lg font-semibold mb-2">{whyChooseUsItems[1].title}</h3>
+      <p className="text-[12px] md:text-sm">{whyChooseUsItems[1].description}</p>
+    </div>
+  </div>
+
+  <div className="md:absolute md:-bottom-10 md:left-[50%] md:transform md:-translate-x-1/2 w-[90%] md:w-[30%]">
+    <div className="border border-gray-200 rounded-lg p-6 shadow-md">
+      <h3 className="text-base md:text-lg font-semibold mb-2">{whyChooseUsItems[2].title}</h3>
+      <p className="text-[12px] md:text-sm">{whyChooseUsItems[2].description}</p>
+    </div>
+  </div>
+
+  <div className="md:absolute md:top-[50%] md:left-10 md:transform md:-translate-y-1/2 w-[90%] md:w-[30%]">
+    <div className="border border-gray-200 rounded-lg p-6 shadow-md">
+      <h3 className="text-base md:text-lg font-semibold mb-2">{whyChooseUsItems[3].title}</h3>
+      <p className="text-[12px] md:text-sm">{whyChooseUsItems[3].description}</p>
+    </div>
+  </div>
+</div>
+
       </div>
 
       <Funding />

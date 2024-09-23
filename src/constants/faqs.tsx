@@ -288,18 +288,18 @@ export const homeFaqs = [
     question:
       "Besides TAM/SAM/SOM, what other market sizing metrics are important?",
     answer: `
-      Customer Acquisition Cost (CAC):</strong> The cost of acquiring a new customer. It helps you understand the efficiency of your marketing and sales efforts.</p>
-      CAC Formula:</strong> CAC = Total Customer Acquisition Costs / Number of Customers Acquired</p>
-      <em>Example:</em> Imagine your company spends ₹100,000 on marketing and sales campaigns in a quarter, acquiring 100 new customers. Your CAC would be ₹1,000 (₹100,000 / 100).</p>
-      Customer Lifetime Value (CLTV):</strong> CLTV represents the total revenue a customer generates throughout their relationship with your business. It helps you understand the long-term value of your customers.</p>
-      CLTV Formula:</strong> CLTV = Average Revenue per User (ARPU) x Average Customer Lifespan</p>
-      <em>Example:</em> Let's say your ARPU is ₹500 per month, and the average customer stays with you for 2 years (24 months). Your CLTV would be ₹12,000 (₹500/month x 24 months).</p>
-      Market Share:</strong> Market share reflects your company's portion of the total market compared to competitors. It indicates your position within the industry.</p>
-      Market Share Formula:</strong> Market Share = Your Company's Revenue / Total Market Revenue</p>
-      <em>Example:</em> Suppose your company generates ₹1 million in revenue in a month, and the total market revenue for your industry is ₹10 million that month. Your market share would be 10% (₹1 million / ₹10 million).</p>
-      Customer Acquisition Rate (CAR):</strong> CAR indicates the rate at which you acquire new customers over a specific period.</p>
-      CAR Formula:</strong> CAR = Number of New Customers Acquired / Time Period (e.g., Month, Quarter, Year)</p>
-      Average Revenue Per User (ARPU):</strong> ARPU represents the average revenue generated from each customer over a specific period.</p>
+      • Customer Acquisition Cost (CAC):</strong> The cost of acquiring a new customer. It helps you understand the efficiency of your marketing and sales efforts.</p>
+      • CAC Formula:</strong> CAC = Total Customer Acquisition Costs / Number of Customers Acquired</p>
+      • <em>Example:</em> Imagine your company spends ₹100,000 on marketing and sales campaigns in a quarter, acquiring 100 new customers. Your CAC would be ₹1,000 (₹100,000 / 100).</p>
+      • Customer Lifetime Value (CLTV):</strong> CLTV represents the total revenue a customer generates throughout their relationship with your business. It helps you understand the long-term value of your customers.</p>
+      • CLTV Formula:</strong> CLTV = Average Revenue per User (ARPU) x Average Customer Lifespan</p>
+      • <em>Example:</em> Let's say your ARPU is ₹500 per month, and the average customer stays with you for 2 years (24 months). Your CLTV would be ₹12,000 (₹500/month x 24 months).</p>
+      • Market Share:</strong> Market share reflects your company's portion of the total market compared to competitors. It indicates your position within the industry.</p>
+      • Market Share Formula:</strong> Market Share = Your Company's Revenue / Total Market Revenue</p>
+      • <em>Example:</em> Suppose your company generates ₹1 million in revenue in a month, and the total market revenue for your industry is ₹10 million that month. Your market share would be 10% (₹1 million / ₹10 million).</p>
+      • Customer Acquisition Rate (CAR):</strong> CAR indicates the rate at which you acquire new customers over a specific period.</p>
+      • CAR Formula:</strong> CAR = Number of New Customers Acquired / Time Period (e.g., Month, Quarter, Year)</p>
+      • Average Revenue Per User (ARPU):</strong> ARPU represents the average revenue generated from each customer over a specific period.</p>
       `,
   },
   {
@@ -312,32 +312,32 @@ export const homeFaqs = [
   {
     question: "What's the best way to track my startup's burn rate?",
     answer: `
-      Burn rate is a crucial metric for startups. It measures the rate at which a company is depleting its cash reserves to fund operations.</p>
-      Gross Burn Rate:</strong> Total operating expenses over a specific period.</p>
-      Net Burn Rate:</strong> Total cash outflows minus cash inflows.</p>
-      <em>Example:</em> Let's say a startup has ₹200,000 in monthly expenses and generates ₹50,000 in monthly revenue. The gross burn rate would be ₹200,000, and the net burn rate would be ₹150,000.</p>
+      • Burn rate is a crucial metric for startups. It measures the rate at which a company is depleting its cash reserves to fund operations.</p>
+      • Gross Burn Rate:</strong> Total operating expenses over a specific period.</p>
+      • Net Burn Rate:</strong> Total cash outflows minus cash inflows.</p>
+      • <em>Example:</em> Let's say a startup has ₹200,000 in monthly expenses and generates ₹50,000 in monthly revenue. The gross burn rate would be ₹200,000, and the net burn rate would be ₹150,000.</p>
       `,
   },
   {
     question:
       "What essential documents should a business have prepared when seeking funding from investors or venture capital firms?",
     answer: `
-      Executive Summary:</strong> A concise overview of your business, product, and market.</p>
-      Business Plan:</strong> A detailed roadmap outlining your strategy and financials.</p>
-      Pitch Deck:</strong> A presentation summarizing your business for investors.</p>
-      Financial Statements:</strong> Audited financials or well-constructed projections.</p>
-      Legal Documents:</strong> Incorporation documents, capitalization table, etc.</p>
+      • Executive Summary:</strong> A concise overview of your business, product, and market.</p>
+      • Business Plan:</strong> A detailed roadmap outlining your strategy and financials.</p>
+      • Pitch Deck:</strong> A presentation summarizing your business for investors.</p>
+      • Financial Statements:</strong> Audited financials or well-constructed projections.</p>
+      • Legal Documents:</strong> Incorporation documents, capitalization table, etc.</p>
       `,
   },
   {
     question:
       "What types of questions do investors typically ask during due diligence?",
     answer: `
-      Market Opportunity:</strong> Investors will assess the size and potential of your target market.</p>
-      Product/Service:</strong> They'll evaluate your product's uniqueness and roadmap.</p>
-      Financial Projections:</strong> They will scrutinize your revenue model and burn rate.</p>
-      Team Expertise:</strong> They'll ask about your team's capabilities and experience.</p>
-      Go-to-Market Strategy:</strong> Investors want to understand how you'll acquire customers.</p>
+      • Market Opportunity:</strong> Investors will assess the size and potential of your target market.</p>
+      • Product/Service:</strong> They'll evaluate your product's uniqueness and roadmap.</p>
+      • Financial Projections:</strong> They will scrutinize your revenue model and burn rate.</p>
+      • Team Expertise:</strong> They'll ask about your team's capabilities and experience.</p>
+      • Go-to-Market Strategy:</strong> Investors want to understand how you'll acquire customers.</p>
       `,
   },
   {

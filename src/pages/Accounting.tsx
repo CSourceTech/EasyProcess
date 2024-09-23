@@ -13,6 +13,7 @@ import Footer from "@/components/ui/footer";
 import { accountingFaqs } from "@/constants/faqs";
 import { accountingItems } from "@/constants/carousel";
 import Compilance from "@/components/Accounting";
+import Image from "next/image";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -47,119 +48,80 @@ const Accounting = () => {
       <Navbar />
       <Hero items={accountingItems} />
 
-      <div style={{ display: 'flex', alignItems: 'flex-start' }}>
-    <div style={{ flex: 2, marginLeft: '80px' }}>
-      <img 
-        src="/AccountingwhyUs.png" 
-        alt="Why Choose Us" 
-        style={{ width: '100%', height: 'auto' }}
-      />
-    </div>
+      <div className="w-full flex justify-center">
+        <div className="w-full flex justify-center flex-col">
+          <div className="flex justify-center w-full items-center md:mt-[80px] flex-col">
+          <h1
+            className="text-4xl md:text-7xl mb-4 text-[#a60424] text-center font-bold my-8"
+          >
+            Just Why Opt for EaseMyProcess?
+          </h1>
+          <h2  className="w-full flex justify-center text-sm md:text-xl md:mb-8">
+            We offer unique solutions tailored to your needs.
+          </h2>
+          </div>
+          <div className="relative w-full h-[500px] flex flex-col gap-6 md:flex-row items-center justify-center my-20">
+            {/* Central Circular Image */}
+            <div className="absolute w-[400px] h-[400px] md:flex items-center justify-center hidden ">
+              <Image
+                src="/valuationWhyUs.png"
+                alt="Circular Image"
+                width={450}
+                height={150}
+                className="rounded-full object-contain p-10"
+              />
+            </div>
 
-    <div style={{ flex: 2, marginLeft: '20px' }}>
-      <h1 style={{ fontSize: '70px', marginBottom: '10px', color: '#a60424' , fontWeight:'bold' }}>Just Why Opt for EaseMyProcess?</h1>
-      <h2 style={{ fontSize: '18px', marginBottom: '20px' }}>
-      We offer unique solutions tailored to your needs.
-      </h2>
-      <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-        <div 
-          style={{ 
-            width: '550px', 
-            border: '1px solid #ddd', 
-            borderRadius: '10px', 
-            padding: '10px', 
-            boxShadow: '0 4px 8px rgba(0,0,0,0.2)', 
-            transition: 'box-shadow 0.3s ease, transform 0.3s ease',
-            cursor: 'pointer'
-          }}
-          onMouseOver={(e) => {
-            e.currentTarget.style.boxShadow = '0 6px 12px rgba(0,0,0,0.3)';
-            e.currentTarget.style.transform = 'scale(1.05)';
-          }}
-          onMouseOut={(e) => {
-            e.currentTarget.style.boxShadow = '0 4px 8px rgba(0,0,0,0.2)';
-            e.currentTarget.style.transform = 'scale(1)';
-          }}
-        >
-          <h3 style={{ fontSize: '16px', marginBottom: '5px' }}>Save Money:</h3>
-          <p style={{ fontSize: '14px' }}>With astute bookkeeping, you can reduce your accounting and compliance expenses by 60%..</p>
+            {/* Surrounding Content Boxes */}
+            <div className="md:absolute md:-top-20 md:left-[50%] md:transform md:-translate-x-1/2 w-[90%] md:w-[30%]">
+              <div className="border border-gray-200 rounded-lg p-6 shadow-md">
+                <h3 className="text-base md:text-lg font-semibold mb-2 text-center">Save money:</h3>
+                <p className="text-[12px] md:text-sm text-center">
+                  With astute bookkeeping, you can reduce your accounting and
+                  compliance expenses by 60%.
+                </p>
+              </div>
+            </div>
+
+            <div className="md:absolute md:top-[50%] md:right-10 md:transform md:-translate-y-1/2 w-[90%] md:w-[30%]">
+              <div className="border border-gray-200 rounded-lg p-6 shadow-md">
+                <h3 className="text-base md:text-lg font-semibold mb-2 text-center">Accurate Records</h3>
+                <p className="text-[12px] md:text-sm text-center">
+                  Maintain flawless records and receive monthly financial
+                  statements that are easy to understand.
+                </p>
+              </div>
+            </div>
+
+            <div className="md:absolute md:-bottom-10 md:left-[50%] md:transform md:-translate-x-1/2 w-[90%] md:w-[30%]">
+              <div className="border border-gray-200 rounded-lg p-6 shadow-md">
+                <h3 className="text-base md:text-lg font-semibold mb-2 text-center">Easy Tax Filing:</h3>
+                <p className="text-[12px] md:text-sm text-center">
+                  {" "}
+                  Accurate tax files help you avoid penalties and interest.
+                </p>
+              </div>
+            </div>
+
+            <div className="md:absolute md:top-[50%] md:left-10 md:transform md:-translate-y-1/2 w-[90%] md:w-[30%]">
+              <div className="border border-gray-200 rounded-lg p-6 shadow-md">
+                <h3 className="text-base md:text-lg font-semibold mb-2 text-center">
+                  Financial Health:
+                </h3>
+                <p className="text-[12px] md:text-sm text-center">
+                  {" "}
+                  Monitor and enhance the financial health of your company.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div 
-          style={{ 
-            width: '550px', 
-            border: '1px solid #ddd', 
-            borderRadius: '10px', 
-            padding: '20px', 
-            boxShadow: '0 4px 8px rgba(0,0,0,0.2)', 
-            transition: 'box-shadow 0.3s ease, transform 0.3s ease',
-            cursor: 'pointer'
-          }}
-          onMouseOver={(e) => {
-            e.currentTarget.style.boxShadow = '0 6px 12px rgba(0,0,0,0.3)';
-            e.currentTarget.style.transform = 'scale(1.05)';
-          }}
-          onMouseOut={(e) => {
-            e.currentTarget.style.boxShadow = '0 4px 8px rgba(0,0,0,0.2)';
-            e.currentTarget.style.transform = 'scale(1)';
-          }}
-        >
-          <h3 style={{ fontSize: '16px', marginBottom: '5px' }}>Accurate Records</h3>
-          <p style={{ fontSize: '14px' }}>Maintain flawless records and receive monthly financial statements that are easy to understand."</p>
-        </div>
-        <div 
-          style={{ 
-            width: '550px', 
-            border: '1px solid #ddd', 
-            borderRadius: '10px', 
-            padding: '20px', 
-            boxShadow: '0 4px 8px rgba(0,0,0,0.2)', 
-            transition: 'box-shadow 0.3s ease, transform 0.3s ease',
-            cursor: 'pointer'
-          }}
-          onMouseOver={(e) => {
-            e.currentTarget.style.boxShadow = '0 6px 12px rgba(0,0,0,0.3)';
-            e.currentTarget.style.transform = 'scale(1.05)';
-          }}
-          onMouseOut={(e) => {
-            e.currentTarget.style.boxShadow = '0 4px 8px rgba(0,0,0,0.2)';
-            e.currentTarget.style.transform = 'scale(1)';
-          }}
-        >
-          <h3 style={{ fontSize: '16px', marginBottom: '5px' }}>Easy Tax Filing:</h3>
-          <p style={{ fontSize: '14px' }}>Accurate tax files help you avoid penalties and interest.</p>
-        </div>
-        <div 
-          style={{ 
-            width: '550px', 
-            border: '1px solid #ddd', 
-            borderRadius: '10px', 
-            padding: '20px', 
-            boxShadow: '0 4px 8px rgba(0,0,0,0.2)', 
-            transition: 'box-shadow 0.3s ease, transform 0.3s ease',
-            cursor: 'pointer'
-          }}
-          onMouseOver={(e) => {
-            e.currentTarget.style.boxShadow = '0 6px 12px rgba(0,0,0,0.3)';
-            e.currentTarget.style.transform = 'scale(1.05)';
-          }}
-          onMouseOut={(e) => {
-            e.currentTarget.style.boxShadow = '0 4px 8px rgba(0,0,0,0.2)';
-            e.currentTarget.style.transform = 'scale(1)';
-          }}
-        >
-          <h3 style={{ fontSize: '16px', marginBottom: '5px' }}>Financial Health</h3>
-          <p style={{ fontSize: '14px' }}>Monitor and enhance the financial health of your company </p>
-        </div>
-       
       </div>
-    </div>
-  </div>
-      
 
-      <Compilance/>
+      <Compilance />
       <ContactUs />
       <Process />
-      
+
       <FAQs FaqTableData={accountingFaqs} heading="FAQs" />
       <Footer />
     </main>

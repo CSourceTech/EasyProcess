@@ -46,133 +46,80 @@ const DealAdvisory = () => {
       </Head>
       <Navbar />
       <Hero items={dealItems} />
-      <div style={{ display: 'flex', alignItems: 'flex-start' }}>
-    <div style={{ flex: 2, marginLeft: '80px' }}>
+      <div className="w-full flex justify-center">
+    {/* <div style={{ flex: 2, marginLeft: '80px' }}>
       <img 
         src="/dealAdvisoryWhyUS.png" 
         alt="Why Choose Us" 
         style={{ width: '100%', height: 'auto' }}
       />
-    </div>
+    </div> */}
 
-    <div style={{ flex: 2, marginLeft: '20px' }}>
-      <h1 style={{ fontSize: '70px', marginBottom: '10px', color: '#a60424' , fontWeight:'bold' }}>Why Opt for  Us?</h1>
-      <h2 style={{ fontSize: '18px', marginBottom: '20px' }}>
+    <div className="w-full flex justify-center flex-col items-center my-10">
+      <h1  className="text-4xl font-bold text-[#a60424] md:text-7xl my-6">Why Opt for  Us?</h1>
+      <h2 className="text-base md:text-xl w-[90%] text-center my-2">
       We offer unique solutions tailored to your needs.
       </h2>
-      <div style={{ display: 'flex', flexDirection: 'column', gap: '40px', padding: '20px 0' }}>
-        <div 
-          style={{ 
-            width: '550px', 
-            border: '1px solid #ddd', 
-            borderRadius: '10px', 
-            padding: '20px', 
-            boxShadow: '0 4px 8px rgba(0,0,0,0.2)', 
-            transition: 'box-shadow 0.3s ease, transform 0.3s ease',
-            cursor: 'pointer'
-          }}
-          onMouseOver={(e) => {
-            e.currentTarget.style.boxShadow = '0 6px 12px rgba(0,0,0,0.3)';
-            e.currentTarget.style.transform = 'scale(1.05)';
-          }}
-          onMouseOut={(e) => {
-            e.currentTarget.style.boxShadow = '0 4px 8px rgba(0,0,0,0.2)';
-            e.currentTarget.style.transform = 'scale(1)';
-          }}
-        >
-          <h3 style={{ fontSize: '16px', marginBottom: '5px' }}>Skilled Guidance:</h3>
-          <p style={{ fontSize: '14px' }}>Provided by a former Big 4 consultant with extensive knowledge of large-scale transactions in India.</p>
-        </div>
-        <div 
-          style={{ 
-            width: '550px', 
-            border: '1px solid #ddd', 
-            borderRadius: '10px', 
-            padding: '20px', 
-            boxShadow: '0 4px 8px rgba(0,0,0,0.2)', 
-            transition: 'box-shadow 0.3s ease, transform 0.3s ease',
-            cursor: 'pointer'
-          }}
-          onMouseOver={(e) => {
-            e.currentTarget.style.boxShadow = '0 6px 12px rgba(0,0,0,0.3)';
-            e.currentTarget.style.transform = 'scale(1.05)';
-          }}
-          onMouseOut={(e) => {
-            e.currentTarget.style.boxShadow = '0 4px 8px rgba(0,0,0,0.2)';
-            e.currentTarget.style.transform = 'scale(1)';
-          }}
-        >
-          <h3 style={{ fontSize: '16px', marginBottom: '5px' }}>Full-Service Advisory:</h3>
-          <p style={{ fontSize: '14px' }}>We handle every aspect, from identifying prospects to completing transactions. Our in-depth knowledge of the market allows us to identify the most favorable investment opportunities in India.</p>
-        </div>
-        <div 
-          style={{ 
-            width: '550px', 
-            border: '1px solid #ddd', 
-            borderRadius: '10px', 
-            padding: '20px', 
-            boxShadow: '0 4px 8px rgba(0,0,0,0.2)', 
-            transition: 'box-shadow 0.3s ease, transform 0.3s ease',
-            cursor: 'pointer'
-          }}
-          onMouseOver={(e) => {
-            e.currentTarget.style.boxShadow = '0 6px 12px rgba(0,0,0,0.3)';
-            e.currentTarget.style.transform = 'scale(1.05)';
-          }}
-          onMouseOut={(e) => {
-            e.currentTarget.style.boxShadow = '0 4px 8px rgba(0,0,0,0.2)';
-            e.currentTarget.style.transform = 'scale(1)';
-          }}
-        >
-          <h3 style={{ fontSize: '16px', marginBottom: '5px' }}>Startup Specialization:</h3>
-          <p style={{ fontSize: '14px' }}>We assist with exit planning and startup setup. Over 50,000 Indian companies received $14 billion in investment in 2023.. </p>
-        </div>
-        <div 
-          style={{ 
-            width: '550px', 
-            border: '1px solid #ddd', 
-            borderRadius: '10px', 
-            padding: '20px', 
-            boxShadow: '0 4px 8px rgba(0,0,0,0.2)', 
-            transition: 'box-shadow 0.3s ease, transform 0.3s ease',
-            cursor: 'pointer'
-          }}
-          onMouseOver={(e) => {
-            e.currentTarget.style.boxShadow = '0 6px 12px rgba(0,0,0,0.3)';
-            e.currentTarget.style.transform = 'scale(1.05)';
-          }}
-          onMouseOut={(e) => {
-            e.currentTarget.style.boxShadow = '0 4px 8px rgba(0,0,0,0.2)';
-            e.currentTarget.style.transform = 'scale(1)';
-          }}
-        >
-          <h3 style={{ fontSize: '16px', marginBottom: '5px' }}>Regulatory Knowledge:</h3>
-          <p style={{ fontSize: '14px' }}>We are aware of the intricate tax and regulatory laws in India. </p>
+     
+      <div className="relative w-full h-[500px] flex flex-col gap-4 md:gap-0 md:flex-row items-center justify-center my-28 md:my-20">
+        {/* Central Circular Image */}
+        <div className="absolute w-[400px] h-[400px] items-center justify-center hidden md:flex ">
+          <img
+            src="/FinancialPlanningWhyus.png"
+            alt="Why Choose Us"
+            className="rounded-full object-contain w-[550px] h-[550px]"
+          />
         </div>
 
-        <div 
-          style={{ 
-            width: '550px', 
-            border: '1px solid #ddd', 
-            borderRadius: '10px', 
-            padding: '20px', 
-            boxShadow: '0 4px 8px rgba(0,0,0,0.2)', 
-            transition: 'box-shadow 0.3s ease, transform 0.3s ease',
-            cursor: 'pointer'
-          }}
-          onMouseOver={(e) => {
-            e.currentTarget.style.boxShadow = '0 6px 12px rgba(0,0,0,0.3)';
-            e.currentTarget.style.transform = 'scale(1.05)';
-          }}
-          onMouseOut={(e) => {
-            e.currentTarget.style.boxShadow = '0 4px 8px rgba(0,0,0,0.2)';
-            e.currentTarget.style.transform = 'scale(1)';
-          }}
-        >
-          <h3 style={{ fontSize: '16px', marginBottom: '5px' }}>Client Focus:</h3>
-          <p style={{ fontSize: '14px' }}>In an economy that is expanding quickly, we address problems promptly and communicate effectively </p>
+        {/* Top Content Box */}
+        <div className="md:absolute md:-top-14 md:left-1/2 md:transform md:-translate-x-1/2 w-[90%]  md:w-[30%]">
+          <div className=" border border-gray-300 rounded-lg p-5 shadow-md transition-transform transform hover:scale-105 hover:shadow-lg cursor-pointer">
+            <h3 className="text-base md:text-lg mb-2 font-bold text-center">Skilled Guidance:</h3>
+            <p className="text-[12px] md:text-sm text-center">
+            Provided by a former Big 4 consultant with extensive knowledge of large-scale transactions in India.
+            </p>
+          </div>
         </div>
-       
+
+        {/* Right Content Box */}
+        <div className="md:absolute md:top-1/2 md:right-10 md:transform md:-translate-y-1/2 w-[90%]  md:w-[30%]">
+          <div className=" border border-gray-300 rounded-lg p-5 shadow-md transition-transform transform hover:scale-105 hover:shadow-lg cursor-pointer">
+            <h3 className="text-base md:text-lg mb-2 font-bold text-center">Full-Service Advisory:</h3>
+            <p className="text-[12px] md:text-sm text-center">
+            We handle every aspect, from identifying prospects to completing transactions. Our in-depth knowledge of the market allows us to identify the most favorable investment opportunities in India.
+            </p>
+          </div>
+        </div>
+
+        {/* Bottom Content Box */}
+        <div className="md:absolute md:-bottom-14 md:right-[13%] md:transform  w-[90%]  md:w-[30%]">
+          <div className=" border border-gray-300 rounded-lg p-5 shadow-md transition-transform transform hover:scale-105 hover:shadow-lg cursor-pointer">
+            <h3 className="text-base md:text-lg mb-2 font-bold text-center">Startup Specialization:</h3>
+            <p className="text-[12px] md:text-sm text-center">
+            We assist with exit planning and startup setup. Over 50,000 Indian companies received $14 billion in investment in 2023..
+            </p>
+          </div>
+        </div>
+
+        {/* Left Content Box */}
+        <div className="md:absolute md:top-1/2 md:left-10 md:transform md:-translate-y-1/2 w-[90%]  md:w-[30%] ">
+          <div className=" border border-gray-300 rounded-lg p-5 shadow-md transition-transform transform hover:scale-105 hover:shadow-lg cursor-pointer">
+            <h3 className="text-base md:text-lg mb-2 font-bold text-center">Regulatory Knowledge:</h3>
+            <p className="text-[12px] md:text-sm text-center">
+            We are aware of the intricate tax and regulatory laws in India.
+            </p>
+          </div>
+        </div>
+
+        {/* Top Left Box (optional) */}
+        <div className="md:absolute md:-bottom-14 md:left-[13%] md:transform  md:w-[30%] w-[90%] ">
+          <div className="border border-gray-300 rounded-lg p-5 shadow-md transition-transform transform hover:scale-105 hover:shadow-lg cursor-pointer">
+            <h3 className="text-base md:text-lg mb-2 font-bold text-center">client Focus:</h3>
+            <p className="text-[12px] md:text-sm text-center">
+            In an economy that is expanding quickly, we address problems promptly and communicate effectively
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </div>

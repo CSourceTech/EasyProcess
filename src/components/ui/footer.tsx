@@ -58,7 +58,7 @@ export default function Footer({ }: Props) {
             <MdPhone className=" text-3xl" />
             <div className='flex flex-col gap-1'>
               <p className='max-w-lg text-sm'>+91-8295233256</p>
-              <p className='max-w-lg text-sm'>+1-425 374 4499</p>
+              <p className='max-w-lg text-sm'>+1{" "}2764000049</p>
             </div>
           </div>
         </div>

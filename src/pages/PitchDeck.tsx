@@ -67,46 +67,56 @@ const PitchDeck = () => {
       <Navbar />
       <Hero items={pitchItems} />
 
-      <div className="text-center mt-[91px] md:mt-[140px]">
-        <h1 className="text-5xl lg:text-7xl mb-4 text-[#a60424] font-bold">Why Choose Us?</h1>
-        <h2 className="text-xl mb-8">
+      <div className="text-center mt-[91px] md:mt-[80px] flex flex-col items-center">
+        <h1 className="text-4xl lg:text-7xl mb-4 text-[#a60424] font-bold">Why Choose Us?</h1>
+        <h2 className="text-base md:text-xl md:mb-8">
           Many companies require capital, but our approach is distinct:
         </h2>
-        <div className="flex flex-col lg:flex-row items-center justify-center px-4 lg:px-20 pb-12 gap-8">
-          <div className="lg:w-1/2 space-y-6">
-            {whyChooseUsItems.slice(0, 2).map((item, index) => (
-              <div
-                key={index}
-                className="border border-gray-200 rounded-lg p-6 shadow-md transition-all duration-300 hover:shadow-lg hover:scale-105 cursor-pointer"
-              >
-                <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
-                <p className="text-sm">{item.description}</p>
-              </div>
-            ))}
-          </div>
+        <div className="relative w-full h-[600px] flex gap-6 flex-col md:flex-row items-center justify-center my-10 md:my-20">
+  {/* Central Image */}
+  <div className="absolute w-[450px] h-[450px] md:flex items-center justify-center hidden ">
+    <Image
+      src="/pitchDeck.png"
+      alt="Why Choose Us"
+      width={1250}
+      height={1250}
+      className=" w-[450px] h-[450px]"
+    />
+  </div>
 
-          <div className="lg:w-1/3 flex justify-center items-center">
-            <Image
-              src="/pitchDeck.png"
-              alt="Why Choose Us"
-              width={400}
-              height={400}
-              className="w-full h-auto object-contain"
-            />
-          </div>
+  {/* Top Left Content Box */}
+  <div className="md:absolute md:-top-0 md:left-[50%] md:transform md:-translate-x-1/2 w-[90%] md:w-[30%]">
+    <div className=" border border-gray-200 rounded-lg p-5 shadow-md transition-all duration-300 hover:shadow-lg hover:scale-105 cursor-pointer">
+      <h3 className="text-base md:text-lg font-semibold mb-2">{whyChooseUsItems[0].title}</h3>
+      <p className="text-[12px] md:text-sm">{whyChooseUsItems[0].description}</p>
+    </div>
+  </div>
 
-          <div className="lg:w-1/2 space-y-6">
-            {whyChooseUsItems.slice(2).map((item, index) => (
-              <div
-                key={index}
-                className="border border-gray-200 rounded-lg p-6 shadow-md transition-all duration-300 hover:shadow-lg hover:scale-105 cursor-pointer"
-              >
-                <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
-                <p className="text-sm">{item.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
+  {/* Top Right Content Box */}
+  <div className="md:absolute md:top-[50%] md:right-10 md:transform md:-translate-y-1/2 w-[90%] md:w-[30%]">
+    <div className=" border border-gray-200 rounded-lg p-5 shadow-md transition-all duration-300 hover:shadow-lg hover:scale-105 cursor-pointer">
+      <h3 className="text-base md:text-lg font-semibold mb-2">{whyChooseUsItems[1].title}</h3>
+      <p className="text-[12px] md:text-sm">{whyChooseUsItems[1].description}</p>
+    </div>
+  </div>
+
+  {/* Bottom Right Content Box */}
+  <div className="md:absolute md:-bottom-0 md:left-[50%] md:transform md:-translate-x-1/2 w-[90%] md:w-[30%]">
+    <div className=" border border-gray-200 rounded-lg p-5 shadow-md transition-all duration-300 hover:shadow-lg hover:scale-105 cursor-pointer">
+      <h3 className="text-base md:text-lg font-semibold mb-2">{whyChooseUsItems[2].title}</h3>
+      <p className="text-[12px] md:text-sm">{whyChooseUsItems[2].description}</p>
+    </div>
+  </div>
+
+  {/* Bottom Left Content Box */}
+  <div className="md:absolute md:top-[50%] md:left-10 md:transform md:-translate-y-1/2 w-[90%] md:w-[30%]">
+    <div className=" border border-gray-200 rounded-lg p-5 shadow-md transition-all duration-300 hover:shadow-lg hover:scale-105 cursor-pointer">
+      <h3 className="text-base md:text-lg font-semibold mb-2">{whyChooseUsItems[3].title}</h3>
+      <p className="text-[12px] md:text-sm">{whyChooseUsItems[3].description}</p>
+    </div>
+  </div>
+</div>
+
       </div>
 
 
