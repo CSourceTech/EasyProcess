@@ -146,8 +146,8 @@ transfer pricing regulations in India.
           <Image
             src={fund.bg}
             alt={fund.title}
-            width={1000}
-            height={1000}
+            width={1200}
+            height={1200}
             className=""
           />
           <div className="w-full h-[120px] group-hover:h-full flex items-center flex-col duration-500 bg-white absolute bottom-0 group-hover:bottom-1/5 left-0">
