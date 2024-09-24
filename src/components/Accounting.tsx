@@ -62,27 +62,27 @@ export default function Compilance() {
     if (isLastTwoBoxes && index === funding.length - 2) {
       return (
         <div key="last-two-wrapper" className="flex justify-center flex-col md:flex-row md:col-span-3 gap-4">
-          {funding.slice(-2).map((item, subIndex) => (
+          {funding.slice(-2).map((fund, subIndex) => (
             <div
               key={`last-two-${subIndex}`}
               className="relative rounded-lg group mx-auto shadow-lg md:w-80 h-[20rem] md:h-80 overflow-hidden hover:shadow-2xl mb-10 global-shadow"
             >
               <Image
-                src={item.bg}
-                alt={item.title}
+                src={fund.bg}
+                alt={fund.title}
                 width={1000}
                 height={1000}
                 className=""
               />
               <div className="w-full h-[120px] group-hover:h-full flex items-center flex-col duration-500 bg-white absolute bottom-0 group-hover:bottom-1/5 left-0">
                 <div className="absolute -mt-6 group-hover:mt-8 md:group-hover:mt-10 bg-red-600 transition group-hover:duration-300 group-hover:rounded-xl group-hover:border-2 group-hover:border-red-600 p-2 rounded-full text-3xl text-white mx-auto shadow-xl group-hover:bg-white group-hover:text-red-600">
-                  {item.icon}
+                  {fund.icon}
                 </div>
                 <h3 className="text-2xl text-red-600 font-semibold p-2 text-center mt-4 group-hover:mt-16 md:group-hover:mt-24 group-hover:text-xl">
-                  {item.title}
+                  {fund.title}
                 </h3>
                 <span className="mx-6 md:my-2 text-sm text-center opacity-0 group-hover:opacity-100 transition group-hover:duration-100 group-hover:delay-300 group-hover:text-[12px] md:group-hover:text-sm">
-                  {item.desc}
+                  {fund.desc}
                 </span>
               </div>
             </div>
