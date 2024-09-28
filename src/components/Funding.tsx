@@ -20,73 +20,31 @@ export default function Funding() {
   // Indian corporate and foreign exchange regulations.
   const funding = [
     {
-      title: "Business Valuation",
-      desc: `Reveal the true value of your business through comprehensive 
-research into competitors, industry trends, market dynamics, and economic 
-conditions. We provide a clear picture of your business's worth to help you make 
-informed decisions`,
+      title: "Venture Capital",
+      desc: `We help you formulate business fundraising strategy highlighting your business' value and growth potential investors, inspiring them to inject capital.`,
       icon: <MdOutlineBusinessCenter />,
       bg: "/images/hero/ser7.jpg",
     },
     {
-      title: "Startup Valuation",
-      desc: `Dive into the dynamic world of startups with our tailored 
-valuation techniques. We offer precise assessments that provide clarity for both 
-investors and founders, ensuring your emerging venture is accurately valued. 
+      title: "Angel Investing ",
+      desc: `Highlight the potential of your startup to angel investors and secure the funding you need to get your idea off the ground and grow more rapidly.
 `,
       icon: <FaHandHoldingUsd />,
       bg: "/images/hero/ser1.jpg",
     },
     {
-      title: "Valuation of Intangible Assets",
-      desc: `Unlock the hidden value in your brand, technology, 
-    and intellectual property. We optimize purchase prices and valuations in line with 
-    IFRS, US GAAPs, or IndAS standards`,
+      title: "Debt Capital: ",
+      desc: `Create a powerful business fundraising strategy that will help you secure borrowed funds on a long-term or short-term basis, depending on your needs.`,
       icon: <GiAngelWings />,
       bg: "/images/hero/ser3.jpg",
     },
     {
-      title: "Goodwill Impairment Testing",
-      desc: `Address goodwill impairment issues effectively 
-    while adhering to IFRS, US GAAPs, or IndAS requirements. We provide detailed 
-    analysis to ensure compliance and accuracy`,
+      title: "Private Seed Funds ",
+      desc: `Startup India Seed Fund Scheme and To raise equity capital of INR 10 Lacs and above .`,
       icon: <FaLandmarkDome />,
       bg: "/images/hero/ser4.png",
     },
-    {
-      title: "Valuation for Mergers and Restructuring",
-      desc: `Valuation for Mergers and Restructuring: Navigate mergers, spin-offs, and 
-restructuring with confidence. Our precise valuation insights help determine fair swap 
-ratios and strategic paths for successful transitions`,
-      icon: <IoStatsChart />,
-      bg: "/images/hero/ser2.jpg",
-    },
-    {
-      title: "IBBI Registered Valuations",
-      desc: `Rely on our expertise as registered valuers under the 
-Companies Act, 2013, and Insolvency & Bankruptcy guidelines, ensuring accuracy 
-and adherence to regulatory standards`,
-      icon: <MdAutoGraph />,
-      bg: "/images/hero/ser5.png",
-    },
-    {
-      title: "Valuations Under SEBI & SE Regulations",
-      desc: `Navigate regulatory 
-complexities with precision. We offer valuation services that comply with SEBI and 
-stock exchange regulations, ensuring regulatory adherence and credibility. 
-`,
-      icon: <PiGraphBold />,
-      bg: "/images/hero/ser6.png",
-    },
-    {
-      title: "Valuation of Legal Entities, Shares, and Complex Securities",
-      desc: `For Accounting Purposes: Compliance with IFRS, US GAAPs, and IndAS 
-standards. For Tax Purposes: Adherence to Rule 11UA/11UB of Income-tax Rules and 
-transfer pricing regulations in India.
-`,
-      icon: <FaMoneyBillWave />,
-      bg: "/images/hero/ser8.jpg",
-    },
+   
   ]
 
   return (
@@ -94,7 +52,7 @@ transfer pricing regulations in India.
     <div className="w-full py-10 bg-[#f6f6f6]">
       <div className="container mx-auto">
         <h1 className="text-3xl md:text-5xl text-[#d2042d] font-bold flex justify-center mb-10 text-center" >
-          Types of Financial Support
+          Types of Funding
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
   {funding.map((fund, index) => {
