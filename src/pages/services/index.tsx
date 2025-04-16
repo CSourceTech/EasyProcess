@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import services from "@/data/services";
 import Navbar from "@/components/ui/navbar";
 import Footer from "@/components/ui/footer";
-import WhatsappButton from "@/components/whatapp";
 import { HoverEffect } from "@/components/ui/card-hover-effect";
 
 const Services = () => {
@@ -15,7 +14,6 @@ const Services = () => {
         <meta name="description" content="Services page" />
       </Head>
       <Navbar />
-      <WhatsappButton />
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto">
           <motion.div initial={{ opacity: 0, y: 50 }}

@@ -1,6 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-import WhatsappButton from "@/components/whatapp";
 import Navbar from "@/components/ui/navbar";
 import Footer from "@/components/ui/footer";
 import Head from "next/head";
@@ -14,7 +13,6 @@ function security({}: Props) {
       </Head>
       <Navbar/>
       <section className="text-gray-600 body-font relative">
-        <WhatsappButton />
         {/* <motion.div
           initial={{ opacity: 0, y: -70, skewY: -12 }}
           whileInView={{ opacity: 1, y: 0 }}

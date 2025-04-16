@@ -4,6 +4,7 @@ import { PiXLogoDuotone } from "react-icons/pi";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa6";
 import { MdLocationPin, MdAlternateEmail, MdPhone } from "react-icons/md";
 import Link from "next/link";
+import WhatsappButton from "../whatapp";
 
 type Props = {};
 
@@ -11,6 +12,7 @@ export default function Footer({ }: Props) {
   return (
     <footer className="bg-[#292929] px-12 py-12">
       <div className="flex justify-between items-center md:flex-row flex-col px-2 md:px-0 py-4">
+        <WhatsappButton />
         <Image src="/navbarLogo.svg" width={1000} height={1000} alt="EaseMyProcess" className='w-32 mb-4 md;mb-0' />
         <p className="text-white text-center mb-4 md:mb-0">&copy; {new Date().getFullYear()} All rights reserved by Ease My Business</p>
         <div className='flex justify-center items-center gap-4'>

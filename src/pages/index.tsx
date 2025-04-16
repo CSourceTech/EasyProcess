@@ -44,7 +44,6 @@ export default function Home() {
 
       {/* <Testimonials /> */}
       {/* <Calendly /> */}
-      {/* <WhatsappButton /> */}
 
 
       <Footer />

@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import Head from 'next/head';
 import Navbar from '@/components/ui/navbar';
-import WhatsappButton from '@/components/whatapp';
 import { HeroHighlight, Highlight } from '@/components/ui/hero-highlight';
 import { motion } from "framer-motion"
 import Image from "next/image"
@@ -78,7 +77,6 @@ export default function Valuation() {
                 <meta name="description" content="Services page" />
             </Head>
             <Navbar />
-            <WhatsappButton />
             <main className='w-full'>
 
                 {/* HERO */}

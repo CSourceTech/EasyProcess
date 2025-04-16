@@ -3,7 +3,7 @@ import { AnimatedTooltip } from "./ui/animated-tooltip";
 
 const WhatsappButton = () => {
     const handleWhatsappClick = () => {
-        window.open('', '_blank');
+        window.open('https://wa.link/1hidyq', '_blank');
     };
 
     const logo = [

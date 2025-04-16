@@ -1,7 +1,6 @@
 import Footer from "@/components/ui/footer";
 import { useState } from 'react';
 import Navbar from "@/components/ui/navbar";
-import WhatsappButton from "@/components/whatapp";
 import Head from "next/head";
 import React from "react";
 import { motion } from "framer-motion";
@@ -40,7 +39,6 @@ export default function contact({}: Props) {
         <title> Contact | Ease My Process</title>
       </Head>
       <Navbar />
-      <WhatsappButton />
       <section className="text-gray-600 body-font relative">
      
         <div className="container px-5 pt-24 mx-auto">

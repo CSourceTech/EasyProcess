@@ -22,7 +22,6 @@ export default function ServicePage({ service }: { service: any }) {
         <title>{`${service.title} | Ease My Process`}</title>
       </Head>
       <Navbar />
-      <WhatsappButton />
       <main className="w-full">
         <section className="md:w-11/12 mx-auto py-12 md:p-20 relative">
           <div className="relative px-4 md:px-6">
@@ -318,7 +317,6 @@ export default function ServicePage({ service }: { service: any }) {
 }
 
 import { GetServerSidePropsContext } from "next";
-import WhatsappButton from "@/components/whatapp";
 
 export async function getServerSideProps(context: GetServerSidePropsContext) {
   const { params } = context;

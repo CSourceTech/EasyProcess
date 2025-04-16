@@ -1,6 +1,5 @@
 import Footer from '@/components/ui/footer'
 import Navbar from '@/components/ui/navbar'
-import WhatsappButton from '@/components/whatapp'
 import Head from 'next/head'
 import React from 'react'
 import { FaLinkedinIn } from 'react-icons/fa6'
@@ -40,7 +39,6 @@ const Team= [
         <title>About | Ease My Process</title>
     </Head>
     <Navbar/>
-    <WhatsappButton/>
     <div>
     <section className="text-gray-700 bg-white body-font">
 
